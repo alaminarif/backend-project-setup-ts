@@ -3,13 +3,14 @@
 ### Install command:
 
 ```shell
-npm init  tsc --init
+npm init  
+ tsc --init
 ```
 
 Dev Dependencies:
 
 ```shell
-`yarn add -D typescript @types/express ts-node-dev @types/cors
+yarn add -D typescript @types/express ts-node-dev @types/cors
 ```
 
 Dependencies:
@@ -23,7 +24,7 @@ yarn add express mongoose dotenv cors
 "start": "ts-node-dev --respawn --transpile-only src/server.ts"
 ```
 
-**added .ENV file**
+**Added .env file**
 
 ```js
 
@@ -49,11 +50,11 @@ dotenv.config({ path: path.join(process.cwd(), '.env') })
 tsconfig.json file second line
 
 ```json
-"include": ["src"], // which files to compile
-"exclude": ["node_modules"], // which files to skip
+"include": ["src"], 
+"exclude": ["node_modules"],
 ```
 
-Install:
+Install plugins:
 
 ```shell
 yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
@@ -125,9 +126,9 @@ Added script>pakage.json
 
 ```json
 "lint-prettier": " yarn lint:check && yarn prettier:check"
-Lint staged
-```
 
+```
+### Lint staged
 ### Install lint-staged
 
 ```shell
@@ -137,11 +138,14 @@ Yarn add -D lint-staged
 
 ```json
 "lint-staged": {
-"src/\*_/_.ts": "yarn lint-prettier"
+"src/**/*.ts": "yarn lint-prettier"
 },
 ```
 
-### precommit file > “yarn lint:check” replace yarn lint-staged
+### precommit file > “yarn lint:check” replace 
+``` js
+yarn lint-staged
+```
 
 ### .eslintrc > rules replace:
 
