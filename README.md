@@ -100,10 +100,10 @@ yarn add -D prettier
 "prettier:check": "yarn prettier --write .",
 ```
 
-Replace script>
+#### Replace script>
 
 ```json
-"prettier:check": "prettier --ignore-path .gitignore --write \"\*_/_.+(js|ts|json)\"",
+ "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
 ```
 
 ### Avoiding conflicts
@@ -112,7 +112,7 @@ Replace script>
 yarn add -D eslint-config-prettier
 ```
 
-replace .eslintrc
+#### replace .eslintrc
 
 ---
 
@@ -126,7 +126,7 @@ yarn husky install
 
 ### precommit file > “npm test” replace yarn lint:check
 
-Added script>pakage.json
+#### Added pakage.json > script
 
 ```json
 "lint-prettier": " yarn lint:check && yarn prettier:check"
