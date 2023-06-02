@@ -4,7 +4,7 @@
 
 ```shell
 npm init  
- tsc --init
+tsc --init
 ```
 
 Dev Dependencies:
@@ -19,7 +19,7 @@ Dependencies:
 
 yarn add express mongoose dotenv cors
 ```
-
+#### Added pakage.json > script
 ```json
 "start": "ts-node-dev --respawn --transpile-only src/server.ts"
 ```
@@ -61,14 +61,16 @@ yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --sav
 ```
 
 Add .eslintrc file
-Package.json file added lint
-Added script>pakage.json
+<br>
+Package.json file added  
+
+#### Added pakage.json > script
 
 ```json
 "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
 ```
 
-Added script>pakage.json
+#### Added pakage.json > script
 
 ```json
 "lint:fix": "eslint --fix",
@@ -89,8 +91,10 @@ dist
 yarn add -D prettier
 ```
 
-Added .prettierrc file
-Added script>pakage.json
+#### Added .prettierrc file
+<br>
+<br>
+#### Added pakage.json > script
 
 ```json
 "prettier:check": "yarn prettier --write .",
@@ -135,7 +139,7 @@ Added script>pakage.json
 
 Yarn add -D lint-staged
 ```
-
+#### Added pakage.json > script
 ```json
 "lint-staged": {
 "src/**/*.ts": "yarn lint-prettier"
