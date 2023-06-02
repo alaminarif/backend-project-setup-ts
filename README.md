@@ -152,7 +152,7 @@ Yarn add -D lint-staged
 "no-undef":"error",
 "no-unused-expressions":"error",
 "no-unreachable":"error",
-"consistent-type-definitions": ["error", "type"]
+"@typescript-eslint/consistent-type-definitions": ["error", "type"]
 },
 ```
 
