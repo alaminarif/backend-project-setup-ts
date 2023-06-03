@@ -3,7 +3,7 @@
 ### Install command:
 
 ```shell
-npm init  
+npm init
 tsc --init
 ```
 
@@ -19,7 +19,9 @@ Dependencies:
 
 yarn add express mongoose dotenv cors
 ```
+
 #### Added pakage.json > script
+
 ```json
 "start": "ts-node-dev --respawn --transpile-only src/server.ts"
 ```
@@ -28,7 +30,7 @@ yarn add express mongoose dotenv cors
 
 ```js
 
-NODE_ENV = development
+NODE_ENV = production
 
 PORT = 5000
 DATABASE_URL =
@@ -50,7 +52,7 @@ dotenv.config({ path: path.join(process.cwd(), '.env') })
 tsconfig.json file second line
 
 ```json
-"include": ["src"], 
+"include": ["src"],
 "exclude": ["node_modules"],
 ```
 
@@ -62,7 +64,7 @@ yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --sav
 
 Add .eslintrc file
 <br>
-Package.json file added  
+Package.json file added
 
 #### Added pakage.json > script
 
@@ -92,8 +94,7 @@ yarn add -D prettier
 ```
 
 #### Added .prettierrc file
-<br>
-<br>
+
 #### Added pakage.json > script
 
 ```json
@@ -132,22 +133,27 @@ yarn husky install
 "lint-prettier": " yarn lint:check && yarn prettier:check"
 
 ```
+
 ### Lint staged
+
 ### Install lint-staged
 
 ```shell
 
 Yarn add -D lint-staged
 ```
+
 #### Added pakage.json > script
+
 ```json
 "lint-staged": {
 "src/**/*.ts": "yarn lint-prettier"
 },
 ```
 
-### precommit file > “yarn lint:check” replace 
-``` js
+### precommit file > “yarn lint:check” replace
+
+```js
 yarn lint-staged
 ```
 
@@ -163,6 +169,138 @@ yarn lint-staged
 "@typescript-eslint/consistent-type-definitions": ["error", "type"]
 },
 ```
+
+---
+
+### Logger:
+
+#### Instals logger
+
+```shell
+yarn add winston
+```
+
+### Added src>share>logger.ts
+
+```ts
+import winston from 'winston'
+const myFormat = printf(({ level, message, label, timestamp }) => {
+  return `${timestamp} [${label}] ${level}: ${message}`
+})
+
+const logger = winston.createLogger({
+  level: 'info',
+  format: combine(label({ label: 'right meow!' }), timestamp(), prettyPrint()),
+
+  transports: [
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'error.log', level: 'error' }),
+    new winston.transports.File({ filename: 'combined.log' }),
+  ],
+})
+export default logger
+```
+
+### custom logger
+
+#### added function logger > new transpoet.file
+
+```ts
+new transports.File({
+  filename: path.join(process.cwd(), 'logs', 'winston', 'success.log'),
+  level: 'info',
+})
+```
+
+#### added function errorLogger > new transpoet.file
+
+```ts
+new transports.File({
+      filename: path.join(process.cwd(), 'logs', 'winston', 'error.log'),
+      level: 'error',
+    }),
+```
+
+#### added myFormat function logger
+
+```ts
+// import
+const { combine, timestamp, label, printf } = format
+
+const myFormat = printf(({ level, message, label, timestamp }) => {
+  return `${timestamp} [${label}] ${level}: ${message}`
+})
+```
+
+#### time beutify
+
+```ts
+const myFormat = printf(({ level, message, label, timestamp }) => {
+  const date = new Date(timestamp)
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const second = date.getSeconds()
+  return `${date.toDateString()} ${hours}: ${minutes}: ${second} [${label}] ${level}: ${message}`
+})
+```
+
+---
+
+## manage winston logs
+
+#### winstone rotate logs
+
+```shell
+yarn add winston-daily-rotate-file
+
+```
+
+```ts
+// import
+import DailyRotateFile from 'winston-daily-rotate-file'
+```
+
+### replace new transports.File
+
+#### Succes logger
+
+```ts
+
+new DailyRotateFile({
+      filename: path.join(
+        process.cwd(),
+        'logs',
+        'winston',
+        'successes',
+        'umi-%DATE%-success.log'
+      ),
+      datePattern: 'YYYY-DD-MM-HH',
+      zippedArchive: true,
+      maxSize: '20m',
+      maxFiles: '14d',
+    }),
+
+```
+
+#### error logger
+
+```ts
+new DailyRotateFile({
+filename: path.join(
+process.cwd(),
+'logs',
+'winston',
+'errors',
+'umi-%DATE%-error.log'
+),
+datePattern: 'YYYY-DD-MM-HH',
+zippedArchive: true,
+maxSize: '20m',
+maxFiles: '14d',
+}),
+```
+
+---
 
 ### .vscode > setting.json> :
 

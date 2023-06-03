@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\.7ad4aef8ddc76d316712a37a31c5e8f214f0e607-audit.json",
+    "files": [
+        {
+            "date": 1685768232796,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-03-06-10-error.log",
+            "hash": "9ccdc27b7c8d0026863cd9b2d8ec759da16ffe2535eec73451d9b3efb0f2ffc5"
+        },
+        {
+            "date": 1685768434315,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-03-06-11-error.log",
+            "hash": "881afd1a4db83560e7e7b81371432a0867e3fc782c097f15409789043a0f440d"
+        },
+        {
+            "date": 1685780862504,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-03-06-14-error.log",
+            "hash": "0ca67a7dab4662565a8bf1370990aa823817333cbe4c6d2ad89526d733d21b07"
+        },
+        {
+            "date": 1685782903533,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-03-06-15-error.log",
+            "hash": "a8eaac7761e493618814517af6fe171507d4ffc8f01aabef47179b31dab5b13b"
+        }
+    ],
+    "hashType": "sha256"
+}

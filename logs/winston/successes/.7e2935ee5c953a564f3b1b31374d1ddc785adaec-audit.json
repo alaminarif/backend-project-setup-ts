@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\successes\\.7e2935ee5c953a564f3b1b31374d1ddc785adaec-audit.json",
+    "files": [
+        {
+            "date": 1685768232752,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\successes\\uni-2023-03-06-10-success.log",
+            "hash": "06844b7c0c304ab18f2cb7135304258895129159a1ac9fe80bf6e7a526d1801c"
+        },
+        {
+            "date": 1685768434304,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\successes\\uni-2023-03-06-11-success.log",
+            "hash": "aa78d1e37ec0b33f4124a840952da9e551609f3bdb7117255b18a1111743800a"
+        },
+        {
+            "date": 1685780862496,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\successes\\uni-2023-03-06-14-success.log",
+            "hash": "3e41f9871dc50b45ec8606ec1ec79543e5f7dd7429a94a9474b853816fef6480"
+        },
+        {
+            "date": 1685782903528,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\successes\\uni-2023-03-06-15-success.log",
+            "hash": "a314d69538b62259d4585dd4794f73de52b5dbcd53a231b84489275f9c6263ad"
+        }
+    ],
+    "hashType": "sha256"
+}
