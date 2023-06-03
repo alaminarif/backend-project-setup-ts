@@ -8,3 +8,5 @@ const globalErrodHandler = (
 ) => {
   next()
 }
+
+export default globalErrodHandler
