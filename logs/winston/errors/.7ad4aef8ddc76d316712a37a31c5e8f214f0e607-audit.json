@@ -24,6 +24,36 @@
             "date": 1685782903533,
             "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-03-06-15-error.log",
             "hash": "a8eaac7761e493618814517af6fe171507d4ffc8f01aabef47179b31dab5b13b"
+        },
+        {
+            "date": 1685875559473,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-04-06-16-error.log",
+            "hash": "137dd2087fe0dd5a80810fef666e4e423cb020828d337a35e4732880b7232703"
+        },
+        {
+            "date": 1686182553437,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-08-06-06-error.log",
+            "hash": "7e18399e90ba5ef4fed1b4903a0c9c41ce8401e9c29b5caf2427c1097237894a"
+        },
+        {
+            "date": 1686188447271,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-08-06-07-error.log",
+            "hash": "20699c6618e4aa0b965bfe6b4f299c829fbcdac5a76272535af4056cdecbcfc8"
+        },
+        {
+            "date": 1686191247681,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-08-06-08-error.log",
+            "hash": "5a1f2e6c13f86132b0f322fe321d9295c63c51332e6b27972c0174bd13347ce2"
+        },
+        {
+            "date": 1686194170621,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-08-06-09-error.log",
+            "hash": "e96dc5e81f64bc5f2094727a3f388c34d67d2ebfe70affdae676c74eaad5e35c"
+        },
+        {
+            "date": 1686196839509,
+            "name": "D:\\Coding\\Projects\\backend-project-setup\\logs\\winston\\errors\\uni-2023-08-06-10-error.log",
+            "hash": "193987c2f80b0b5cd921eb74c0bc4bafe9f9e90d3b9979e396beddf1853d8971"
         }
     ],
     "hashType": "sha256"
